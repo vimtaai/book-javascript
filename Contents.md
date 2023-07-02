@@ -114,3 +114,42 @@
   - (*`task`*) Minesweeper
   - (*`task`*) Basic Kanban board
 
+## Graphics and Games
+
+- **Goals**: basics of programming through graphics and games, no library
+- **Prerequisite, setup** (*`link`*) *Setting up the environment*
+  - Code editor, browser  
+  - Basic mathematics (coordinate geometry, trigonometry)
+- **Basics of computer graphics**
+  - Raster vs. vector graphics
+  - Coordinate system: `(0,0)`, translation
+  - Color theory: RGB, hex colors, color spaces
+- **The HTML Canvas** (*`link`*) *JavaScript Basics / Data types*
+  - Properties of canvases
+  - Simple shapes: drawing shapes, fill and stroke
+  - Paths: line types, closing the path, line properties
+  - Text: drawing text, text properties
+  - Images: drawing images
+  - Drawing functions: parameters, translate
+  - (*`advanced`*) Sprites
+- **User interaction** (*`link`*) *JavaScript Basics / Event handling*
+  - Events: listening to global events  
+  - Event details: event object  
+  - (*`task`*) *Simple drawing application*
+- **Simulations and games**
+  - Simulation loop: timers, loop components
+  - (`*advanced*`) Animation frames: advanced loop, timing
+  - Games: simulations with events, game loop
+  - Collision: how to detect
+  - Stages: multi-stage games
+  - (*`task`*) *Breakout, Infinite runner*
+- **Structuring the code** (*`link`*) *JavaScript Basics / Module system*
+  - Game objects: sprites with classes, translate
+  - State-UI-Events: interaction, data flow
+  - Structuring code: purpose vs. components  
+  - (*`task`*) *Top-down shooter*
+- **Complex examples**
+  - (*`task`*) Simple drawing application
+  - (*`task`*) Breakout
+  - (*`task`*) Infinite runner
+  - (*`task`*) Top-down shooter
