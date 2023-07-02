@@ -27,15 +27,13 @@
 ## JavaScript Basics
 
 - **Goals**: getting started, mini-reference
-- **Properties of JavaScript**
+- **Properties of JavaScript** (*`link`*) *Node.js, Deno, MDN*
   - Script language: runtime, browser, Node.js, Deno  
-    (*`link`*) Node.js, Deno
   - Dynamically typed: value vs reference  
     (*`note`*) educational considerations
   - Paradigms: imperative, functional, object-oriented  
     (*`note`*) role of paradigms, multi-paradigm languages
   - Documentation: official docs  
-    (*`link`*) MDN
   - (*`note`*) ECMAScript versions: we use the "latest"
   - (*`note`*) TypeScript as a typed alternative
 - **Basic syntax**
@@ -44,12 +42,9 @@
   - Variables
   - Functions
 - **Data types**
-  - `number`, `string`, `boolean`, `undefined`: syntax  
-    (*`note`*) properties, methods
-  - `array`, `object`: syntax  
-    (*`note`*) reference
-  - `function`: syntax  
-    (*`note`*) function as a first-class type
+  - `number`, `string`, `boolean`, `undefined`: syntax, properties, methods
+  - `array`, `object`: syntax, pass as reference
+  - `function`: syntax, first-class type
 - **Classes**
   - `class`: syntax  
     (*`note`*) no "real" classes, they are functions, prototypes
@@ -57,7 +52,12 @@
   - Representing data: `object`-`array`-primitive  
     (*`note`*) JSON, serialize
   - Processing data: array functions, loops on arrays and objects
-  - (*`theory`*) data-information-knowledge triangle
+  - (*`theory`*) Data-information-knowledge triangle
+- **Event handling**
+  - Event binding: `addEventListener`, event handler
+  - Event object: properties, canceling, bubbling
+  - Custom events: details
+  - (*`theory`*) Event loop
 - **Asynchronous programming**
   - Promises: how they work, promise states
   - `async`-`await`: how and when to use
