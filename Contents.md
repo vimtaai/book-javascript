@@ -53,6 +53,10 @@
     (*`note`*) JSON, serialize
   - Processing data: array functions, loops on arrays and objects
   - (*`theory`*) Data-information-knowledge triangle
+- **Error handling**
+  - Error type
+  - Try-catch
+  - Custom errors
 - **Event handling**
   - Event binding: `addEventListener`, event handler
   - Event object: properties, canceling, bubbling
@@ -65,6 +69,7 @@
   - `import`-`export`: requires server, differences from Node.js  
     (*`note`*) Live Server
   - Structuring your code, best practices
+  - Built-in modules: Node, Deno
 - **Setting up the environment**
   - Code editor, browser, Node.js, Deno
   - Extensions: prettier, live server  
@@ -75,8 +80,7 @@
 
 - **Goals**: using native tech, frontend applications  
   (*`note`*) frontend frameworks
-- **Prerequisite, setup**
-  (*`link`*) *Setting up the environment*
+- **Prerequisite, setup** (*`link`*) *JavaScript Basics / Setting up the environment*
   - Basic HTML, CSS
   - Code editor, browser  
 - **Interactive UI** (*`link`*) *JavaScript Basics / Event handling*
@@ -117,8 +121,8 @@
 ## Graphics and Games
 
 - **Goals**: basics of programming through graphics and games, no library
-- **Prerequisite, setup** (*`link`*) *Setting up the environment*
-  - Code editor, browser  
+- **Prerequisite, setup** (*`link`*) *JavaScript Basics / Setting up the environment*
+  - Code editor, browser
   - Basic mathematics (coordinate geometry, trigonometry)
 - **Basics of computer graphics**
   - Raster vs. vector graphics
@@ -133,8 +137,8 @@
   - Drawing functions: parameters, translate
   - (*`advanced`*) Sprites
 - **User interaction** (*`link`*) *JavaScript Basics / Event handling*
-  - Events: listening to global events  
-  - Event details: event object  
+  - Events: listening to global events
+  - Event details: event object
   - (*`task`*) *Simple drawing application*
 - **Simulations and games**
   - Simulation loop: timers, loop components
@@ -146,7 +150,7 @@
 - **Structuring the code** (*`link`*) *JavaScript Basics / Module system*
   - Game objects: sprites with classes, translate
   - State-UI-Events: interaction, data flow
-  - Structuring code: purpose vs. components  
+  - Structuring code: purpose vs. components
   - (*`task`*) *Top-down shooter*
 - **Complex examples**
   - (*`task`*) Simple drawing application
