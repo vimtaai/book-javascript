@@ -157,3 +157,29 @@
   - (*`task`*) Breakout
   - (*`task`*) Infinite runner
   - (*`task`*) Top-down shooter
+
+## Console applications
+
+- **Goals**: basics of programming through classic algorithmic problems
+- **Prerequisite, setup** (*`link`*) *JavaScript Basics / Setting up the environment*
+  - Basic CLI commands **or** IDE setup
+  - Code editor or IDE, Deno
+- **Basic data handling** (*`link`*) *JavaScript Basics / Data types*
+  - Running Deno
+  - Variables and constants
+  - Reading from console  
+    (*`note`*) Browser APIs
+  - (*`task`*) *Guess the number*
+  - (*`theory`*) I/O streams
+- **Basic algorithms** (*`link`*) *JavaScript Basics / Data types*
+  - Higher order functions
+  - Aggregation: `reduce`, `find`
+  - Mapping: `map`, `filter`
+  - (*`theory`*) Programming theorems
+- **Working with files** (*`link`*) *JavaScript Basics / Asynchronous programming*
+  - File I/O: read, parse
+    (*`note`*) Allowing file I/O in deno
+  - (*`advanced`*): JSON, data serialization
+- **Advanced algorithms**
+  - Sorting: selection sort, bubble sort, insertion
+  - (*`advanced`*): quick sort
