@@ -76,43 +76,41 @@
 - **Goals**: using native tech, frontend applications  
   (*`note`*) frontend frameworks
 - **Prerequisite, setup**
+  (*`link`*) *Setting up the environment*
   - Basic HTML, CSS
   - Code editor, browser  
-    (*`link`*) **Setting up the environment**
-- **Interactive UI**
+- **Interactive UI** (*`link`*) *JavaScript Basics / Event handling*
   - DOM: input-output API for HTML, accessing elements  
     (*`note`*) navigating the DOM
   - Basic events: interactive elements  
     (*`note`*) watch out for data type transformations  
-    (*`link`*) **Data types**
   - Event object: using event details, keyboard, mouse
+  - (*`task`*) Screencast mode
 - **UI generation**
   - Imperative: how to create and insert elements
   - Declarative: creating nested templates  
     (*`note`*) rendering libraries
   - Event delegation: why and how  
     (*`note`*) how frameworks solve it
-- **State management**
+- **State management** (*`link`*) *JavaScript Basics / Data types*
   - Storing state: what is state, UI is state representation  
-    (*`link`*) **Data types / arrays, objects**
   - State mutation: directly or through dedicated methods  
-    (*`link`*) **Data types / functions**
   - UI rendering: trigger re-render when state changes
   - (*`advanced`*) best practices for state management, classes of state
-  - (*`link`*) **Complex examples / Minesweeper**)
-- **Application architecture**
+  - (*`link`*) *Slider puzzle*
+- **Application architecture** (*`link`*) *JavaScript Basics / Module system*
   - State-UI-Events: interaction, data flow
   - Structuring code: purpose vs. components  
-    (*`link`*) **Module system**)
   - (*`advanced`*) web components, component-based development
   - (*`advanced`*) state libraries, unidirectional flow, reactive programming
-  - (*`link`*) **Complex examples**)
+  - (*`task`*) *Minesweeper*
 - **Storing data**
   - `LocalStorage`: storing basic data on the user's computer, serialization
   - `IndexedDB`: storing structured data on the user's computer
   - (*`advanced`*) data stored on servers, BaaS concept
-  - (*`link`*) **Complex examples / Basic Kanban board**
+  - (*`task`*) *Basic Kanban board*
 - **Complex examples**
-  - Minesweeper
-  - Slider puzzle
-  - Basic Kanban board
+  - (*`task`*) Slider puzzle
+  - (*`task`*) Minesweeper
+  - (*`task`*) Basic Kanban board
+
