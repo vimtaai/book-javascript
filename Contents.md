@@ -15,11 +15,10 @@
 - **Web as a development platform**
   - Interactive web pages & web applications
   - Why the web is good for learning?
-- **Core technologies of the Web**
+- **Core technologies of the Web**  
+  (*`link`*) *MDN*
   - How the web works: HTTP, URL
-    (*`link`*) MDN
-  - How webpages work: HTML, JS, CSS, JSON  
-    (*`link`*) MDN
+  - How webpages work: HTML, JS, CSS, JSON
 - **History of JavaScript**
   - Birth of JavaScript
   - Progressive enhancement
