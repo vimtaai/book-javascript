@@ -3,7 +3,7 @@
 ## Preface
 
 - **Goal of the book**: paths for learning programming, prerequisites
-- **Structure of the book**: contents, notations, code examples
+- **Structure of the book**: contents, notations, code examples, visualization with connections
 - **Principles**: modern, learning-focused, principles can be applied to development
 - **How to use**: introduction is background information, use the learning paths
 - **Notes**: more advanced technological considerations in side notes
