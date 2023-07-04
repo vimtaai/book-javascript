@@ -158,6 +158,40 @@
   - (*`task`*) Infinite runner
   - (*`task`*) Top-down shooter
 
+## Turtles and Simulations
+
+- **Goals**: computational thinking through agent-based programming  
+  (*`note`*) we could build it natively with canvases, we use Agent.js
+- **Prerequisite, setup** (*`link`*) *JavaScript Basics / Setting up the environment*
+  - Agent JS
+  - Code editor, browser
+- **Basic drawing** (*`link`*) *JavaScript Basics / Data types*
+  - HTML Canvas: basics, dimensions, coordinates, context  
+    (*`note`*) Agent JS as an alternative
+  - Sequences: drawing with sequences
+  - Loops: repeats, basic math
+  - Turtle properties: color, pen
+  - Procedures: functions with side effects
+  - Recursion: recursive patterns
+  - Multi-agent: multiple turtles, pass agent to function
+- **Simulations**
+  - Timers: animation, callbacks
+  - Random: randomization
+  - Cellular automata: field, neighbors
+  - Complex simulations: agents and fields combined
+  - (*`task`*) *Predator-prey model*
+- **User interaction** (*`link`*) *JavaScript Basics / Event handling*
+  - Events: listening to global events
+  - Event details: event object, adding agents, start-stop
+  - (*`task`*) *Game of life*
+- **Configuration UI**
+  - Form elements: basic HTML inputs, DOM output, monitoring
+  - Events: listener, buttons, setting parameters
+- **Complex examples**
+  - (*`task`*) Predator-prey model
+  - (*`task`*) Game of life
+  - (*`task`*) Ant model
+
 ## Console applications
 
 - **Goals**: basics of programming through classic algorithmic problems
