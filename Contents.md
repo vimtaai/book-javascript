@@ -26,24 +26,24 @@
 
 ## JavaScript Basics
 
-- [ ] **Goals**: getting started, mini-reference
+- [x] **Goals**: getting started, mini-reference
 - [ ] **Properties of JavaScript** (*`link`*) *Node.js, Deno, MDN*
-  - [ ] Script language: runtime, browser, Node.js, Deno  
+  - [x] Script language: runtime, browser, Node.js, Deno  
   - [ ] Dynamically typed: value vs reference  
     (*`note`*) educational considerations
   - [ ] Paradigms: imperative, functional, object-oriented  
     (*`note`*) role of paradigms, multi-paradigm languages
-  - [ ] Documentation: official docs  
+  - [x] Documentation: official docs  
   - [ ] (*`note`*) ECMAScript versions: we use the "latest"
-  - [ ] (*`note`*) TypeScript as a typed alternative
+  - [x] (*`note`*) TypeScript as a typed alternative
 - [ ] **Basic syntax**
   - [ ] Statements
   - [ ] Control structures
   - [ ] Variables
   - [ ] Functions
 - [ ] **Data types**
-  - [ ] `number`, `string`, `boolean`, `undefined`: syntax, properties, methods
-  - [ ] `array`, `object`: syntax, pass as reference
+  - [x] `number`, `string`, `boolean`, `undefined`: syntax, properties, methods
+  - [x] `array`, `object`: syntax, pass as reference
   - [ ] `function`: syntax, first-class type
 - [ ] **Classes**
   - [ ] `class`: syntax  
