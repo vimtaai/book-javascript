@@ -6,7 +6,7 @@ The main author of this guide is Márton Visnovitz, Hungarian software developer
 
 ## Goals
 
-The primary audience of this guide are teachers teaching programming and students who want to learn the basics of coding. It provides educational journeys using web technologies, mainly the JavaScript programming language. These are presented in the second part of the guide are intended as separate approaches to learn programming, not as consecutive topics to master. Choosing one of journeys based on the student's preferences, needs and interests helps creating a more enjoyable and effective learning experience.
+The primary audience of this guide are teachers teaching programming and students who want to learn the basics of coding. It provides educational journeys using web technologies, mainly the JavaScript programming language. These are presented in the Part II of this guide are intended as separate approaches to learn programming, not as consecutive topics to master. Choosing one of journeys based on the student's preferences, needs and interests helps creating a more enjoyable and effective learning experience.
 
 When creating this guide we followed three core principles:
 
@@ -16,9 +16,9 @@ When creating this guide we followed three core principles:
 
 ## Structure
 
-This guide is split into two parts. The first part contains information about the core concepts of developing software in a web environment. This includes an introduction to the basics of the Web, how it works, its fundamental principles and technologies, along with a guide for the basics of the JavaScript programming language. This section is intended to be used as a reference rather than as a learning material. Instead of going through the information presented here, start with one of the learning journeys presented in the second part.
+This guide is split into two parts. Part I contains information about the core concepts of developing software in a web environment. This includes an introduction to the basics of the Web, how it works, its fundamental principles and technologies, along with a guide for the basics of the JavaScript programming language. This section is intended to be used as a reference rather than as a learning material. Instead of going through the information presented here, start with one of the learning journeys presented in the Part II.
 
-The second part includes various learning journeys to choose from. With the exception of the "[Developing Applications][2a]" journey, little to no prerequisite knowledge is required to get started. Each journey builds on a different approach/strategy to teach and learn programming. Choosing either of these will cover the basics of programming and various programming topics, but each also includes pieces of knowledge that are unique to the specific learning journey.
+Part II includes various learning journeys to choose from. With the exception of the "[Developing Applications][2a]" journey, little to no prerequisite knowledge is required to get started. Each journey builds on a different approach/strategy to teach and learn programming. Choosing either of these will cover the basics of programming and various programming topics, but each also includes pieces of knowledge that are unique to the specific learning journey.
 
 Several exercises are also present in each of the journeys. Some of these are included to practice a specific piece of new knowledge, while some serve as complex problems to apply the knowledge gained throughout the whole learning experience.
 
