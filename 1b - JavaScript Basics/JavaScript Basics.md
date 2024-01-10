@@ -36,7 +36,7 @@ variable = true; // type: boolean
 
 > The standard that defines the capabilities of the JavaScript language is called ECMAScript. Versions of JavaScript are usually referenced by the version of the ECMAScript standard that defines them (e.g. ECMAScript 2023)
 
-### References
+### References for JavaScript
 
 - Official JavaScript documentation  
   ["JavaScript" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -146,7 +146,7 @@ enterpriseG.registry = "NCC-1701-G";
 titanA.registry; // "NCC-1701-G"
 ```
 
-If you want to create a copy of an object, you can use the spread operator (`...`) to create a new object with the same properties. Be careful however, as this method only creates a "shallow-copy". This means that if the values in your data structure are complex data structures themselves, then those won't get copied, only a new reference will be created. If you want to create a "deep-copy" of an object, you can use the `JSON.stringify()` and `JSON.parse()` methods to do so.
+If you want to create a copy of an object or array, you can use the spread operator (`...`) to create a new object with the same properties or an array with the same values. Be careful however, as this operator only creates a "shallow-copy". This means that if the values in your data structure are complex data structures themselves, then those won't get copied, only a new reference will be created. If you want to create a "deep-copy" of an object, you can use the `JSON.stringify()` and `JSON.parse()` methods to do so.
 
 ```js
 const weyoun4 = {
@@ -163,9 +163,132 @@ const weyoun6 = JSON.parse(JSON.stringify(weyoun5)); // "deep" copy
 
 > The [JSON data format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) is based on the object and array syntax of JavaScript. JSON is primarily used as a data transfer format on the Web, but is also used as a data storage and metadata description format as well.
 
-### References
+### Functions
+
+Functions are first class objects in JavaScript. Instead of being a separate language construct, functions are values with the `Function` type. They can be defined with either the `function` keyword or with the "double arrow syntax" (`=>`);
+
+Functions can have any number of arguments, these arguments can have default values. Functions may return a value with the `return` keyword. The function will return with `undefined` if no `return` statement is present or the `return` statement has no parameter.
+
+```js
+function engage(destination, warpFactor = 5) {
+  const eta = calculateEta(destination, warpFactor);
+
+  setDestination(destination);
+  setSpeed(warpFactor);
+
+  return eta;
+}
+```
+
+While arrow functions can have their own function body defined within a block within curly braces (`{}`), they are most powerful when they only contain a return statement. In this case we don't have to include the curly braces at all. Such arrow function are most commonly used with array methods such as `map`, `filter`, `some`, or `every`.
+
+```js
+const registries = ["NCC-1701", "NX-2000", "NX-74205", "NCC-74656"];
+
+const experimentalRegistries = registries.filter((registry) =>
+  registry.startsWith("NX-")
+);
+```
+
+> If you want to return an object literal from an arrow function, you have to wrap the curly braces of the object with parentheses, otherwise the interpreter would assume that the braces indicate a new code block.
+
+If you want your function to accept an unspecified number of arguments, you can create a [variadric function](https://en.wikipedia.org/wiki/Variadic_function) with the rest operator (`...`).
+
+```js
+function beamUp(...crewMembers) {
+  // crewMembers is an array of all arguments
+}
+
+beamUp("Kirk", "Spock", "McCoy");
+```
+
+When a function has optional arguments or we want to accept arguments in any order it is commonplace to pass these arguments as properties a single object. In this case we can reference the optional arguments by name. These arguments can be automatically bound to local variables by using object destructuring in the function signature
+
+```js
+function calibrateWarpCore({ dilithiumAlignment, containmentFieldStrength }) {
+  if (dilithiumAlignment !== undefined) {
+    setDilithiumAlignment(dilithiumAlignment);
+  }
+
+  if (containmentFieldStrength !== undefined) {
+    setContainmentFieldStrength(containmentFieldStrength);
+  }
+}
+
+calibrateWarpCore({ dilithiumAlignment: 47 });
+```
+
+> When teaching with functions it is recommended to use the `function` keyword, unless we want to create a [lambda function](https://en.wikipedia.org/wiki/Anonymous_function). For lambda functions we should use the double arrow syntax if the expression is not overly complex.
+
+> Functions can be called with more or even less arguments than what is defined in the function signature. Additional arguments are not bound to any local variable (but can still be accessed through the special `arguments` variable in the functions that are defined with the `function` keyword), missing arguments will get the `undefined` value.
+
+### Classes
+
+Similarly to other object-oriented programming languages it is possible to create classes in JavaScript. The class can include fields and methods. Unlike many other programming languages, you don't have to define all fields in advance, you can extend the instance of your class with any field or method. Within the class fields and methods are accessed with the `this` keyword.
+
+Classes can be instantiated with the `new` keyword. This will call the `constructor()` method of the class if defined. It is also possible to create private fields and methods with the `#` prefix in JavaScript.
+
+Classes may also have getters and setters. These are special methods that allow special logic to be applied when a property is accessed or modified. If only one of the two accessor methods is defined, then the other functionality won't be available (e.g. if the setter is missing then the property cannot be modified);
+
+```js
+class Starship {
+  // Public fields
+  name = "";
+  registry = "";
+
+  // Private fields
+  #crew = [];
+
+  constructor(name, registry) {
+    this.name = name;
+    this.registry = registry;
+  }
+  
+  // Public methods, getters, setters
+  get crewComplement() {
+    return this.#crew.length;
+  }
+
+  set isExperimental(value) {
+    if (value === true) {
+      this.#setRegistryPrefix("NX");
+    } else {
+      this.#setRegistryPrefix("NCC");
+    }
+  }
+
+  // Private methods, getters, setters
+  addCrewMember(crewMember) {
+    this.#crew.push(crewMember);
+  }
+
+  get #registryPrefix() {
+    const indexOfDash = this.registry.indexOf("-");
+    return this.registry.substring(0, indexOfDash);
+  }
+
+  // Private methods
+  #setRegistryPrefix(newPrefix) {
+    this.registry = this.registry.replace(this.#registryPrefix, newPrefix);
+  }
+}
+
+const excelsior = new Starship("USS Excelsior", "NX-2000");
+excelsior.addCrewMember("Hikaru Sulu");
+excelsior.crewComplement; // 1
+excelsior.isExperimental = false;
+excelsior.registry; // NCC-2000
+```
+
+> In JavaScript classes are actually special functions. The `class` keyword is a syntax sugar for creating such functions.
+
+### References for types
 
 - More details on JavaScript types  
   ["JavaScript data types and data structures" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- More details on JavaScript functions  
+  ["Functions" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+- More details on JavaScript classes  
+  ["Using classes" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes)
 
 > JavaScript has dialects that support static typing and type definitions. The most popular of these dialects is [TypeScript](https://www.typescriptlang.org/). Using types can be beneficial from an educational point of view if we want to put more emphasis on the concept of types in the learning process. Some runtimes like Deno have TypeScript support built in.
