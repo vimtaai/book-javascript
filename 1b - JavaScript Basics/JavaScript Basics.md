@@ -15,12 +15,14 @@ for (let i = 2; i < 10; i += 1) {
 }
 ```
 
-```js
+```cpp
 int x = 1;
 for (int i = 2; i < 10; i += 1) {
   x = x * i;
 }
 ```
+
+Much like other similar languages, in JavaScript every statement is followed by a semicolon (`;`), however unlike most languages it is optional. While JavaScript interpreters are capable of [automatic semicolon insertion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion), it is still recommended to use semicolons, as there are edge-cases that may cause unintended behavior (or syntax error) if we omit it.
 
 JavaScript identifiers such as function and variable names are **case-sensitive**. There are well-established best practices for using different letter casing for different language constructs. Variables, local constants, function and class method names use camel case (e.g. `camelCase`) while class names use Pascal case (e.g. `PascalCase`). Global constants may use upper snake case (e.g. `UPPER_SNAKE_CASE` ) but this is not a universally accepted convention.
 
@@ -96,7 +98,7 @@ Object literals are defined by listing key-value pairs between curly braces (`{}
 let enterprise = {
   class: "Constitution",
   registry: "NCC-1701",
-  commissionYear: 2245
+  commissionYear: 2245,
 };
 ```
 
@@ -120,19 +122,50 @@ Array literals are defined by listing values between square brackets (`[]`).
 let starships = ["Enterprise", "Defiant", "Voyager"];
 ```
 
-Values in an array can be accessed by referencing them with their index and the `[]` notation or the `.at()` method. Accessing any non-existent index returns `undefined`;
+Values in an array can be accessed by referencing them with their 0-based index and the `[]` notation or the `.at()` method. Accessing any non-existent index returns `undefined`;
 
 ```js
-starships[2];    // "Voyager"
-starships.at(0); // "Enterprise"
-starships[10];   // undefined
+starships[1];     // "Defiant"
+starships.at(-1); // "Voyager"
+starships[10];    // undefined
 ```
 
-> The JSON data format is based on the object and array syntax of JavaScript. JSON is primarily used as a data transfer format on the Web, but is also used as a data storage and metadata description format as well.
+#### Working with complex data structures
+
+Complex data types such as objects and arrays are always handled as references. This means that when we create a new reference to a complex data structure it will not be copied. Modifying the second reference will modify the original object.
+
+```js
+const titanA = {
+  class: "Constitution III",
+  registry: "NCC-80102-A",
+  commissionYear: 2396,
+};
+
+const enterpriseG = titanA;
+enterpriseG.registry = "NCC-1701-G";
+titanA.registry; // "NCC-1701-G"
+```
+
+If you want to create a copy of an object, you can use the spread operator (`...`) to create a new object with the same properties. Be careful however, as this method only creates a "shallow-copy". This means that if the values in your data structure are complex data structures themselves, then those won't get copied, only a new reference will be created. If you want to create a "deep-copy" of an object, you can use the `JSON.stringify()` and `JSON.parse()` methods to do so.
+
+```js
+const weyoun4 = {
+  name: "Weyoun",
+  race: "Vorta",
+  occupations: ['liason', 'supervisor']
+};
+
+const weyoun5 = {...weyoun4};                        // "shallow" copy
+const weyoun6 = JSON.parse(JSON.stringify(weyoun5)); // "deep" copy
+```
+
+> When writing array and object literals in multiple rows the comma after the last element is optional. If you are using a version control system such as [Git](https://git-scm.com/) it is recommended to include the comma after the last row, as it will generate a smaller footprint in the diff between commits if a new item is added.
+
+> The [JSON data format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) is based on the object and array syntax of JavaScript. JSON is primarily used as a data transfer format on the Web, but is also used as a data storage and metadata description format as well.
 
 ### References
 
 - More details on JavaScript types  
   ["JavaScript data types and data structures" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
-> JavaScript has dialects that support static typing and type definitions. The most popular of these dialect is [TypeScript](https://www.typescriptlang.org/). Using types can be beneficial from an educational point of view if we want to put more emphasis on the concept of types in the learning process. Some runtimes like Deno have TypeScript support built in.
+> JavaScript has dialects that support static typing and type definitions. The most popular of these dialects is [TypeScript](https://www.typescriptlang.org/). Using types can be beneficial from an educational point of view if we want to put more emphasis on the concept of types in the learning process. Some runtimes like Deno have TypeScript support built in.
