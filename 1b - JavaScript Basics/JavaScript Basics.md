@@ -22,9 +22,9 @@ for (int i = 2; i < 10; i += 1) {
 }
 ```
 
-Much like other similar languages, in JavaScript every statement is followed by a semicolon (`;`), however unlike most languages it is optional. While JavaScript interpreters are capable of [automatic semicolon insertion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion), it is still recommended to use semicolons, as there are edge-cases that may cause unintended behavior (or syntax error) if we omit it.
+Much like other similar languages, in JavaScript every statement is followed by a semicolon (`;`), however unlike most languages it is optional. While JavaScript interpreters are capable of [automatic semicolon insertion][1bMDNSemicolon], it is still recommended to use semicolons, as there are edge-cases that may cause unintended behavior (or syntax error) if we omit it.
 
-JavaScript identifiers such as function and variable names are **case-sensitive**. There are well-established best practices for using different letter casing for different language constructs. Variables, local constants, function and class method names use camel case (e.g. `camelCase`) while class names use Pascal case (e.g. `PascalCase`). Global constants may use upper snake case (e.g. `UPPER_SNAKE_CASE` ) but this is not a universally accepted convention.
+JavaScript identifiers such as function and variable names are **case-sensitive**. There are [well-established best practices][1bMDNBestPractices] for using different letter casing for different language constructs. Variables, local constants, function and class method names use camel case (e.g. `camelCase`) while class names use Pascal case (e.g. `PascalCase`). Global constants may use upper snake case (e.g. `UPPER_SNAKE_CASE` ) but this is not a universally accepted convention.
 
 The language is also **dynamically typed**, which means that the type of a variable or constant is determined by the value that they currently hold. This also means that the types of variables are not declared in advance and can changes as the value of the variable changes.
 
@@ -34,14 +34,27 @@ variable = 47;   // type: number
 variable = true; // type: boolean
 ```
 
-> The standard that defines the capabilities of the JavaScript language is called ECMAScript. Versions of JavaScript are usually referenced by the version of the ECMAScript standard that defines them (e.g. ECMAScript 2023)
+JavaScript is a multi-paradigm programming language, which means that it supports a variety of programming styles and paradigms, such as **imperative**, **functional**, and **object-oriented**. While it is possible to use a single paradigm exclusively, the true power of JavaScript is the ability to combine these various programming styles.
+
+> The multi-paradigm nature of JavaScript makes it ideal for showcasing and combining multiple programming paradigms and approaches for students.
+
+> The standard that defines the capabilities of the JavaScript language is called ECMAScript. Versions of JavaScript are usually referenced by the version of the ECMAScript standard that defines them (e.g. ECMAScript 2023). New language features may arrive to various JavaScript engines in different times. It is recommended to check if your runtime of choice supports a new feature before using it. Support tables can be found in the [official documentation][1bMDNJavaScript] and on the [Can I Use][1bCanIUse] website.
 
 ### References for JavaScript
 
 - Official JavaScript documentation  
   ["JavaScript" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- Additional code conventions  
+- Code conventions for writing JavaScript  
   ["Guidelines for writing JavaScript code examples" page on MDN](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript).
+- Lexical grammar of JavaScript
+  ["Lexical grammar - JavaScript" on MDN][1bMDNSemicolon]
+- Support tables for JavaScript features  
+  ["Can I Use..."][1bCanIUse]
+
+[1bMDNJavaScript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[1bMDNBestPractices]: https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript
+[1bMDNSemicolon]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar
+[1bCanIUse]: https://caniuse.com/
 
 ## Types
 
@@ -192,7 +205,7 @@ const experimentalRegistries = registries.filter((registry) =>
 
 > If you want to return an object literal from an arrow function, you have to wrap the curly braces of the object with parentheses, otherwise the interpreter would assume that the braces indicate a new code block.
 
-If you want your function to accept an unspecified number of arguments, you can create a [variadric function](https://en.wikipedia.org/wiki/Variadic_function) with the rest operator (`...`).
+If you want your function to accept an unspecified number of arguments, you can create a [variadic function](https://en.wikipedia.org/wiki/Variadic_function) with the rest operator (`...`).
 
 ```js
 function beamUp(...crewMembers) {
@@ -224,7 +237,7 @@ calibrateWarpCore({ dilithiumAlignment: 47 });
 
 ### Classes
 
-Similarly to other object-oriented programming languages it is possible to create classes in JavaScript. The class can include fields and methods. Unlike many other programming languages, you don't have to define all fields in advance, you can extend the instance of your class with any field or method. Within the class fields and methods are accessed with the `this` keyword.
+Similarly to other object-oriented programming languages it is possible to create classes in JavaScript. A class can include fields (properties) and methods. Unlike many other programming languages, you don't have to define all fields in advance, you can extend the instance of your class with any field or method. Within the class fields and methods are accessed with the `this` keyword.
 
 Classes can be instantiated with the `new` keyword. This will call the `constructor()` method of the class if defined. It is also possible to create private fields and methods with the `#` prefix in JavaScript.
 
@@ -280,7 +293,7 @@ excelsior.isExperimental = false;
 excelsior.registry; // NCC-2000
 ```
 
-> In JavaScript classes are actually special functions. The `class` keyword is a syntax sugar for creating such functions.
+> In JavaScript classes are actually special functions behind the scenes. The `class` keyword is a syntax sugar for creating such functions.
 
 ### References for types
 
