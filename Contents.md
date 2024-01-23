@@ -27,27 +27,29 @@
 ## JavaScript Basics
 
 - [x] **Goals**: getting started, mini-reference
-- [ ] **Properties of JavaScript** (*`link`*) *Node.js, Deno, MDN*
+- [x] **Properties of JavaScript** (*`link`*) *Node.js, Deno, MDN*
   - [x] Script language: runtime, browser, Node.js, Deno  
-  - [ ] Dynamically typed: value vs reference  
+  - [x] Dynamically typed: value vs reference  
     (*`note`*) educational considerations
-  - [ ] Paradigms: imperative, functional, object-oriented  
+  - [x] Paradigms: imperative, functional, object-oriented  
     (*`note`*) role of paradigms, multi-paradigm languages
   - [x] Documentation: official docs  
-  - [ ] (*`note`*) ECMAScript versions: we use the "latest"
+  - [x] (*`note`*) ECMAScript versions: we use the "latest"
   - [x] (*`note`*) TypeScript as a typed alternative
-- [ ] **Basic syntax**
-  - [ ] Statements
-  - [ ] Control structures
-  - [ ] Variables
-  - [ ] Functions
-- [ ] **Data types**
+- [x] **Basic syntax**
+  - [x] Statements
+  - [x] Control structures
+  - [x] Variables
+- [x] **Data types**
   - [x] `number`, `string`, `boolean`, `undefined`: syntax, properties, methods
   - [x] `array`, `object`: syntax, pass as reference
-  - [ ] `function`: syntax, first-class type
-- [ ] **Classes**
-  - [ ] `class`: syntax  
+  - [x] `function`: syntax, first-class type
+- [x] **Classes**
+  - [x] `class`: syntax  
     (*`note`*) no "real" classes, they are functions, prototypes
+  - [x] Fields, methods
+  - [x] Getters, setters
+  - [x] Private fields and methods
 - [ ] **Working with data**
   - [ ] Representing data: `object`-`array`-primitive  
     (*`note`*) JSON, serialize
@@ -75,6 +77,12 @@
   - [ ] Extensions: prettier, live server  
     (*`note`*): linting, code formatting  
     (*`note`*): for pair coding Live Share
+
+## Coding Best Practices
+
+- [ ] Clean code
+  - [ ] Naming conventions
+  - [ ] Function usage best practices
 
 ## Developing Applications
 
