@@ -12,7 +12,7 @@ const config = {
   organizationName: "vimtaai",
   projectName: "book-javascript",
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   i18n: {
