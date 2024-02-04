@@ -4,8 +4,9 @@ JavaScript is an **interpreted script language**. This means that the program co
 
 JavaScript is a multi-paradigm programming language, which means that it supports a variety of programming styles and paradigms, such as **imperative**, **functional**, and **object-oriented**. While it is possible to use a single paradigm exclusively, the true power of JavaScript is the ability to combine these various programming styles.
 
-> [!TIP]
-> The multi-paradigm nature of JavaScript makes it ideal for showcasing and combining multiple programming paradigms and approaches for students.
+:::tip
+The multi-paradigm nature of JavaScript makes it ideal for showcasing and combining multiple programming paradigms and approaches for students.
+:::
 
 ## Syntax
 
@@ -47,8 +48,9 @@ variable = true; // type: boolean
 const contant = "initial value";
 ```
 
-> [!IMPORTANT]
-> The legacy `var` keyword can also be used to create variables in JavaScript, however using it is not recommended as it creates "function-scope" variables as opposed to the more common "block" scope variables created by the `let` and `const` keywords.
+:::warning[Important]
+The legacy `var` keyword can also be used to create variables in JavaScript, however using it is not recommended as it creates "function-scope" variables as opposed to the more common "block" scope variables created by the `let` and `const` keywords.
+:::
 
 ## Control Structures
 
@@ -78,8 +80,9 @@ if (conditionA) {
 }
 ```
 
-> [!TIP]
-> While it is possible, it is not recommended to group together several `else if` branches as it makes the code harder to read. This is also true for nesting `if` statements.
+:::tip
+While it is possible, it is not recommended to group together several `else if` branches as it makes the code harder to read. This is also true for nesting `if` statements.
+:::
 
 ### Switch...case statements
 
@@ -150,21 +153,22 @@ for (const key in object) {
 }
 ```
 
-> [!IMPORTANT]
-> When checking conditions JavaScript will automatically tries to convert the specified value to a `boolean`. Values that evaluate to the `boolean` value of `true` are called "truthy", while values that evaluate to `false` are called "falsy". This automatic conversion can cause unexpected behavior, so it is recommended to make sure that conditions contain `boolean` values. One way to do this to use the strict comparison operator (`===`) in conditions to compare variables to expected values.
->
-> ```js
-> // Recommended
-> if (myString.length > 1) {
->   // statements
-> }
-> 
-> // Not recommended
-> // we depend on any non-zero number value to be converted to true
-> if (myString.length) {
->   // statements
-> }
-> ```
+:::warning[Important]
+When checking conditions JavaScript will automatically tries to convert the specified value to a `boolean`. Values that evaluate to the `boolean` value of `true` are called "truthy", while values that evaluate to `false` are called "falsy". This automatic conversion can cause unexpected behavior, so it is recommended to make sure that conditions contain `boolean` values. One way to do this to use the strict comparison operator (`===`) in conditions to compare variables to expected values.
+
+```js
+// Recommended
+if (myString.length > 1) {
+  // statements
+}
+
+// Not recommended
+// we depend on any non-zero number value to be converted to true
+if (myString.length) {
+  // statements
+}
+```
+:::
 
 ## References
 
@@ -185,5 +189,6 @@ for (const key in object) {
 [1bMDNControlFlow]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 [1bCanIUse]: https://caniuse.com/
 
-> [!NOTE]
-> The standard that defines the capabilities of the JavaScript language is called ECMAScript. Versions of JavaScript are usually referenced by the version of the ECMAScript standard that defines them (e.g. ECMAScript 2023). New language features may arrive to various JavaScript engines in different times. It is recommended to check if your runtime of choice supports a new feature before using it. Support tables can be found in the [official documentation][1bMDNJavaScript] and on the [Can I Use][1bCanIUse] website.
+:::note
+The standard that defines the capabilities of the JavaScript language is called ECMAScript. Versions of JavaScript are usually referenced by the version of the ECMAScript standard that defines them (e.g. ECMAScript 2023). New language features may arrive to various JavaScript engines in different times. It is recommended to check if your runtime of choice supports a new feature before using it. Support tables can be found in the [official documentation][1bMDNJavaScript] and on the [Can I Use][1bCanIUse] website.
+:::

@@ -37,8 +37,9 @@ Special type with only a single possible value: `undefined`. It indicates a miss
 
 Null is also a type with a single value: `null`. Similarly to `undefined` it indicates a missing value, but is used to indicate a missing object rather than a missing primitive.
 
-> [!NOTE]
-> In JavaScript primitive values (with the exception of `null` and `undefined`) have so-called **wrapper objects**. These allow them to behave like objects and have their own properties and methods, such as the `.length` property of strings or the `.toPrecision()` method of numbers.
+:::note
+In JavaScript primitive values (with the exception of `null` and `undefined`) have so-called **wrapper objects**. These allow them to behave like objects and have their own properties and methods, such as the `.length` property of strings or the `.toPrecision()` method of numbers.
+:::
 
 ## Complex types
 
@@ -115,11 +116,13 @@ const weyoun5 = {...weyoun4};                        // "shallow" copy
 const weyoun6 = JSON.parse(JSON.stringify(weyoun5)); // "deep" copy
 ```
 
-> [!TIP]
-> When writing array and object literals in multiple rows the comma after the last element is optional. If you are using a version control system such as [Git](https://git-scm.com/) it is recommended to include the comma after the last row, as it will generate a smaller footprint in the diff between commits if a new item is added.
+:::tip
+When writing array and object literals in multiple rows the comma after the last element is optional. If you are using a version control system such as [Git](https://git-scm.com/) it is recommended to include the comma after the last row, as it will generate a smaller footprint in the diff between commits if a new item is added.
+:::
 
-> [!NOTE]
-> The [JSON data format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) is based on the object and array syntax of JavaScript. JSON is primarily used as a data transfer format on the Web, but is also used as a data storage and metadata description format as well.
+:::note
+The [JSON data format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) is based on the object and array syntax of JavaScript. JSON is primarily used as a data transfer format on the Web, but is also used as a data storage and metadata description format as well.
+:::
 
 ## Functions
 
@@ -148,8 +151,9 @@ const experimentalRegistries = registries.filter((registry) =>
 );
 ```
 
-> [!IMPORTANT]
-> If you want to return an object literal from an arrow function, you have to wrap the curly braces of the object with parentheses, otherwise the interpreter would assume that the braces indicate a new code block.
+:::warning[Important]
+If you want to return an object literal from an arrow function, you have to wrap the curly braces of the object with parentheses, otherwise the interpreter would assume that the braces indicate a new code block.
+:::
 
 If you want your function to accept an unspecified number of arguments, you can create a [variadic function](https://en.wikipedia.org/wiki/Variadic_function) with the rest operator (`...`).
 
@@ -177,11 +181,13 @@ function calibrateWarpCore({ dilithiumAlignment, containmentFieldStrength }) {
 calibrateWarpCore({ dilithiumAlignment: 47 });
 ```
 
-> [!TIP]
-> For easier understanding and better readability it is recommended to use the `function` keyword to declare functions, unless you want to create a [lambda function](https://en.wikipedia.org/wiki/Anonymous_function). For lambda functions you should use the double arrow syntax if the expression is not overly complex.
+:::tip
+For easier understanding and better readability it is recommended to use the `function` keyword to declare functions, unless you want to create a [lambda function](https://en.wikipedia.org/wiki/Anonymous_function). For lambda functions you should use the double arrow syntax if the expression is not overly complex.
+:::
 
-> [!NOTE]
-> Functions can be called with more or even less arguments than what is defined in the function signature. Additional arguments are not bound to any local variable (but can still be accessed through the special `arguments` variable in the functions that are defined with the `function` keyword), missing arguments will get the `undefined` value.
+:::note
+Functions can be called with more or even less arguments than what is defined in the function signature. Additional arguments are not bound to any local variable (but can still be accessed through the special `arguments` variable in the functions that are defined with the `function` keyword), missing arguments will get the `undefined` value.
+:::
 
 ## Classes
 
@@ -241,8 +247,9 @@ excelsior.isExperimental = false;
 excelsior.registry; // NCC-2000
 ```
 
-> [!NOTE]
-> In JavaScript classes are actually special functions behind the scenes. The `class` keyword is a syntax sugar for creating such functions.
+:::note
+In JavaScript classes are actually special functions behind the scenes. The `class` keyword is a syntax sugar for creating such functions.
+:::
 
 ## References
 
@@ -263,5 +270,6 @@ excelsior.registry; // NCC-2000
 [1bWikiQueue]: https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
 [1bWikiStack]: https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
 
-> [!NOTE]
-> JavaScript has dialects that support static typing and type definitions. The most popular of these dialects is [TypeScript](https://www.typescriptlang.org/). Using types can be beneficial from an educational point of view if we want to put more emphasis on the concept of types in the learning process. Some runtimes like Deno have TypeScript support built in.
+:::note
+JavaScript has dialects that support static typing and type definitions. The most popular of these dialects is [TypeScript](https://www.typescriptlang.org/). Using types can be beneficial from an educational point of view if we want to put more emphasis on the concept of types in the learning process. Some runtimes like Deno have TypeScript support built in.
+:::
