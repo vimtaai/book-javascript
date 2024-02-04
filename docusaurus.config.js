@@ -32,10 +32,17 @@ const config = {
       title: "Guide to Learn Programming with JavaScript",
       items: [
         {
-          type: "docSidebar",
-          sidebarId: "navigation",
+          type: "doc",
+          docId: "introduction",
           position: "left",
-          label: "Part I - About JavaScript",
+          label: "Introduction",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "javascript",
+          sidebarCollapsible: false,
+          position: "left",
+          label: "Basics",
         },
         {
           href: "https://github.com/vimtaai/book-javascript",
