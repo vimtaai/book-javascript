@@ -11,7 +11,15 @@ const javascript = [
     label: "JavaScript Basics",
     collapsible: false,
     link: { type: "doc", id: "javascript-basics" },
-    items: ["about-javascript", "types"],
+    items: [
+      "about-javascript",
+      "types",
+      "working-with-data",
+      "error-handling",
+      "asynchronous-programming",
+      "using-modules",
+      "setting-up-the-editor",
+    ],
   },
 ];
 
