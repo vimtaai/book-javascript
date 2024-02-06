@@ -1,4 +1,4 @@
-# Types
+# Data types
 
 Like most programming languages, JavaScript has built-in types to work with. Even though variables are not declared with a static type, they still have types during runtime.
 

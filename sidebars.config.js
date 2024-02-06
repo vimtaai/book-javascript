@@ -12,8 +12,8 @@ const javascript = [
     collapsible: false,
     link: { type: "doc", id: "javascript-basics" },
     items: [
-      "about-javascript",
-      "types",
+      "language-syntax",
+      "data-types",
       "working-with-data",
       "error-handling",
       "asynchronous-programming",
