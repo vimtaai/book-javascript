@@ -2,7 +2,7 @@
 
 Like most programming languages, JavaScript has built-in types to work with. Even though variables are not declared with a static type, they still have types during runtime.
 
-Types can be split to two larger categories: primitive and complex types. Values of primitive types are **immutable**, meaning that the content of the value cannot change (variables holding primitive values can receive new values though). In contrast complex types are **mutable**, so their content can change after they have been initialized.
+Types can be split to two larger categories: **primitive** and **complex** types. Values of primitive types are **immutable**, meaning that the content of the value cannot change (variables holding primitive values can receive new values though). In contrast complex types are **mutable**, so their content can change after they have been initialized.
 
 ## Primitive types
 
@@ -86,43 +86,6 @@ starships[1];     // "Defiant"
 starships.at(-1); // "Voyager"
 starships[10];    // undefined
 ```
-
-### Working with complex data structures
-
-Complex data types such as objects and arrays are always handled as references. This means that when we create a new reference to a complex data structure it will not be copied. Modifying the second reference will modify the original object.
-
-```js
-const titanA = {
-  class: "Constitution III",
-  registry: "NCC-80102-A",
-  commissionYear: 2396,
-};
-
-const enterpriseG = titanA;
-enterpriseG.registry = "NCC-1701-G";
-titanA.registry; // "NCC-1701-G"
-```
-
-If you want to create a copy of an object or array, you can use the spread operator (`...`) to create a new object with the same properties or an array with the same values. Be careful however, as this operator only creates a "shallow-copy". This means that if the values in your data structure are complex data structures themselves, then those won't get copied, only a new reference will be created. If you want to create a "deep-copy" of an object, you can use the `JSON.stringify()` and `JSON.parse()` methods to do so.
-
-```js
-const weyoun4 = {
-  name: "Weyoun",
-  race: "Vorta",
-  occupations: ['liason', 'supervisor']
-};
-
-const weyoun5 = {...weyoun4};                        // "shallow" copy
-const weyoun6 = JSON.parse(JSON.stringify(weyoun5)); // "deep" copy
-```
-
-:::tip
-When writing array and object literals in multiple rows the comma after the last element is optional. If you are using a version control system such as [Git](https://git-scm.com/) it is recommended to include the comma after the last row, as it will generate a smaller footprint in the diff between commits if a new item is added.
-:::
-
-:::note
-The [JSON data format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) is based on the object and array syntax of JavaScript. JSON is primarily used as a data transfer format on the Web, but is also used as a data storage and metadata description format as well.
-:::
 
 ## Functions
 

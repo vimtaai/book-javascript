@@ -50,15 +50,15 @@
   - [x] Fields, methods
   - [x] Getters, setters
   - [x] Private fields and methods
-- [ ] **Working with data**
-  - [ ] Representing data: `object`-`array`-primitive  
+- [x] **Working with data**
+  - [x] Representing data: `object`-`array`-primitive  
     (*`note`*) JSON, serialize
-  - [ ] Processing data: array functions, loops on arrays and objects
+  - [x] Processing data: array functions, loops on arrays and objects
   - [ ] (*`theory`*) Data-information-knowledge triangle
-- [ ] **Error handling**
-  - [ ] Error type
-  - [ ] Try-catch
-  - [ ] Custom errors
+- [x] **Error handling**
+  - [x] Error type
+  - [x] Try-catch
+  - [x] Custom errors
 - [ ] **Event handling**
   - [ ] Event binding: `addEventListener`, event handler
   - [ ] Event object: properties, canceling, bubbling
