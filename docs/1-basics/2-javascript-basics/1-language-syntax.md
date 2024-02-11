@@ -18,9 +18,9 @@ for (int i = 2; i < 10; i += 1) {
 }
 ```
 
-Much like other similar languages, in JavaScript every statement is followed by a semicolon (`;`), however unlike most languages it is optional. While JavaScript interpreters are capable of [automatic semicolon insertion][1bMDNSemicolon], it is still recommended to use semicolons in our code, as there are edge-cases that may cause unintended behavior (or syntax error) if we omit it.
+Much like other similar languages, in JavaScript every statement is followed by a semicolon (`;`), however unlike most languages it is optional. While JavaScript interpreters are capable of [automatic semicolon insertion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion), it is still recommended to use semicolons in our code, as there are edge-cases that may cause unintended behavior (or syntax error) if we omit it.
 
-JavaScript identifiers such as function and variable names are **case-sensitive**. There are [well-established best practices][1bMDNBestPractices] for using different letter casing for different language constructs. Variables, local constants, function and class method names use camel case (e.g. `camelCase`) while class names use Pascal case (e.g. `PascalCase`). Global constants may use upper snake case (e.g. `UPPER_SNAKE_CASE` ) but this is not a universally accepted convention.
+JavaScript identifiers such as function and variable names are **case-sensitive**. There are [well-established best practices]((https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript)) for using different letter casing for different language constructs. Variables, local constants, function and class method names use camel case (e.g. `camelCase`) while class names use Pascal case (e.g. `PascalCase`). Global constants may use upper snake case (e.g. `UPPER_SNAKE_CASE` ) but this is not a universally accepted convention.
 
 ## Variables and constants
 
@@ -158,27 +158,17 @@ if (myString.length) {
   // statements
 }
 ```
+
 :::
 
 ## References
 
-- Official JavaScript documentation  
-  ["JavaScript" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- Code conventions for writing JavaScript  
-  ["Guidelines for writing JavaScript code examples" page on MDN](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript).
-- Lexical grammar of JavaScript  
-  ["Lexical grammar - JavaScript" on MDN][1bMDNSemicolon]
-- More details on JavaScript control flow  
-  ["Control flow and error handling" on MDN][1bMDNControlFlow]
-- Support tables for JavaScript features  
-  ["Can I Use..."][1bCanIUse]
-
-[1bMDNJavaScript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-[1bMDNBestPractices]: https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript
-[1bMDNSemicolon]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar
-[1bMDNControlFlow]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
-[1bCanIUse]: https://caniuse.com/
+- ["JavaScript" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- ["Guidelines for writing JavaScript code examples" page on MDN](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript).
+- ["Lexical grammar - JavaScript" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+- ["Control flow and error handling" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- ["Can I Use..."](https://caniuse.com/)
 
 :::note
-The standard that defines the capabilities of the JavaScript language is called ECMAScript. Versions of JavaScript are usually referenced by the version of the ECMAScript standard that defines them (e.g. ECMAScript 2023). New language features may arrive to various JavaScript engines in different times. It is recommended to check if your runtime of choice supports a new feature before using it. Support tables can be found in the [official documentation][1bMDNJavaScript] and on the [Can I Use][1bCanIUse] website.
+The standard that defines the capabilities of the JavaScript language is called ECMAScript. Versions of JavaScript are usually referenced by the version of the ECMAScript standard that defines them (e.g. ECMAScript 2023). New language features may arrive to various JavaScript engines in different times. It is recommended to check if your runtime of choice supports a new feature before using it. Support tables can be found in the [official documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and on the [Can I Use](https://caniuse.com/) website.
 :::

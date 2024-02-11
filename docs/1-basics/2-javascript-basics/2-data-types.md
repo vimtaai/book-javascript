@@ -71,7 +71,7 @@ enterprise.isActive;    // undefined
 
 Arrays are special objects that store a list of values indexed by incremental integers starting from `0`. Values in an array can have different types and can be changed by assigning a new value to the given index.
 
-The size of an array can be changed dynamically, values can be added, removed and  values can be changed. This dynamic nature of arrays makes it possible to use them as other data structures as well, such as [queues][1bWikiQueue] and [stacks][1bWikiStack].
+The size of an array can be changed dynamically, values can be added, removed and  values can be changed. This dynamic nature of arrays makes it possible to use them as other data structures as well, such as [queues]((https://en.wikipedia.org/wiki/Queue_(abstract_data_type))) and [stacks]((https://en.wikipedia.org/wiki/Stack_(abstract_data_type))).
 
 Array literals are defined by listing values between square brackets (`[]`).
 
@@ -216,22 +216,12 @@ In JavaScript classes are actually special functions behind the scenes. The `cla
 
 ## References
 
-- More details on JavaScript types  
-  ["JavaScript data types and data structures" on MDN][1bMDNTypes]
-- More details on JavaScript functions  
-  ["Functions" on MDN][1bMDNFunctions]
-- More details on JavaScript classes  
-  ["Using classes" on MDN][1bMDNClasses]
-- The Queue data structure  
-  ["Queue (abstract data type)" on Wikipedia][1bWikiQueue]
-- The Stack data structure  
-  ["Stack (abstract data type)" on Wikipedia][1bWikiStack]
-
-[1bMDNTypes]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
-[1bMDNFunctions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
-[1bMDNClasses]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes
-[1bWikiQueue]: https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
-[1bWikiStack]: https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+- ["JavaScript data types and data structures" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- ["Functions" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+- ["Working with objects" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects)
+- ["Using classes" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes)
+- ["Queue (abstract data type)" on Wikipedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- ["Stack (abstract data type)" on Wikipedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
 
 :::note
 JavaScript has dialects that support static typing and type definitions. The most popular of these dialects is [TypeScript](https://www.typescriptlang.org/). Using types can be beneficial from an educational point of view if we want to put more emphasis on the concept of types in the learning process. Some runtimes like Deno have TypeScript support built in.

@@ -45,7 +45,7 @@ function checkIfEverythingIsOk(isEverythingOk) {
 }
 ```
 
-In a complex application error handling can be further improved by creating custom error types to differentiate between various kinds of errors. Defining a new class that extends the `Error` class can be used to create specific error types with custom behavior. If the `constructor` is defined of the new error type, it must call the `super()` method at the start of the `constructor` with the error message passed to it.
+In a complex application error handling can be further improved by creating custom error types to differentiate between various kinds of errors. Defining a new class that extends the `Error` class can be used to create specific error types with custom behavior. If the `constructor` method is defined of the new error type, it must call the `super()` method at the start of the `constructor` with the error message passed to it.
 
 ```js
 class ValidationError extends Error {
@@ -58,10 +58,5 @@ class ValidationError extends Error {
 
 ## References
 
-- More details on Error types  
-  ["Error" on MDN][24MDNError]
-- More details on the try...catch block  
-  ["try...catch" on MDN][24MDNTryCatch]
-
-[24MDNError]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
-[24MDNTryCatch]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+- ["Error" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+- ["try...catch" on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
