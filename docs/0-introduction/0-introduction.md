@@ -1,3 +1,7 @@
+---
+slug: /introduction
+---
+
 # Introduction
 
 ## About the author
@@ -16,7 +20,7 @@ When creating this guide we followed three core principles:
 
 ## Structure
 
-This guide is split into two parts. **Part I** contains information about the core concepts of developing software in a web environment. This includes an introduction to the basics of the Web, how it works, its fundamental principles and technologies, along with a guide for the basics of the JavaScript programming language. This section is intended to be used as a reference rather than as a learning material. Instead of going through the information presented here, start with one of the learning journeys presented in the Part II.
+**Part I** contains information about the core concepts of developing software in a web environment. This includes an introduction to the basics of the Web, how it works, its fundamental principles and technologies, along with a guide for the basics of the JavaScript programming language. This section is intended to be used as a reference rather than as a learning material. Instead of going through the information presented here, start with one of the learning journeys presented in the Part II.
 
 **Part II** includes various learning journeys to choose from. With the exception of the "[Developing Applications][2a]" journey, little to no prerequisite knowledge is required to get started. Each journey builds on a different approach/strategy to teach and learn programming. Choosing either of these will cover the basics of programming and various programming topics, but each also includes pieces of knowledge that are unique to the specific learning journey.
 
