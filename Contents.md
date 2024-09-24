@@ -55,32 +55,32 @@
     (*`note`*) JSON, serialize
   - [x] Processing data: array functions, loops on arrays and objects
   - [ ] (*`theory`*) Data-information-knowledge triangle
-- [x] **Error handling**
-  - [x] Error type
-  - [x] Try-catch
-  - [x] Custom errors
 - [ ] **Event handling**
   - [ ] Event binding: `addEventListener`, event handler
   - [ ] Event object: properties, canceling, bubbling
   - [ ] Custom events: details
   - [ ] (*`theory`*) Event loop
-- [ ] **Asynchronous programming**
-  - [ ] Promises: how they work, promise states
-  - [ ] `async`-`await`: how and when to use
+- [x] **Error handling**
+  - [x] Error type
+  - [x] Try-catch
+  - [x] Custom errors
+- [x] **Asynchronous programming**
+  - [x] Promises: how they work, promise states
+  - [x] `async`-`await`: how and when to use
 - [ ] **Module system**
-  - [ ] `import`-`export`: requires server, differences from Node.js  
+  - [ ] `import`-`export`: requires server, differences from Node.js
     (*`note`*) Live Server
   - [ ] Structuring your code, best practices
   - [ ] Built-in modules: Node, Deno
-- [ ] **Setting up the environment**
-  - [ ] Code editor, browser, Node.js, Deno
+
+## Tools and Coding Best Practices
+
+- [x] **Setting up the environment**
+  - [x] Code editor, browser, Node.js, Deno
   - [ ] Extensions: prettier, live server  
     (*`note`*): linting, code formatting  
     (*`note`*): for pair coding Live Share
-
-## Coding Best Practices
-
-- [ ] Clean code
+- [ ] Clean code (*`link`*)
   - [ ] Naming conventions
   - [ ] Function usage best practices
 
