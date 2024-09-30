@@ -1,12 +1,11 @@
 ---
-slug: /introduction
+title: Welcome
+slug: /
+sidebar_position: 1
 ---
 
-# Introduction
+# Guide to Learn Programming with JavaScript
 
-## About the author
-
-The main author of this Guide is **Márton Visnovitz**, Hungarian software developer with a background in computer science, environmental science and education. His PhD research focused on using web programming and web technologies as a means of teaching programming in school and on a university level.
 
 ## Goals
 
@@ -28,12 +27,16 @@ Several **exercises** are also present in each journey. Some of these are includ
 
 While this Guide is available in a "book" format as well, it is intended to be a "living" document, continuously improved, revised, and updated. Regular fixes and updates are planned in the future.
 
+## About the author
+
+The main author of this Guide is **Márton Visnovitz**, Hungarian software developer with a background in computer science, environmental science and education. His PhD research focused on using web programming and web technologies as a means of teaching programming in school and on a university level.
+
 ## Acknowledgement
 
 This Guide is based on and is a spiritual successor the Hungarian language teacher's handbook web programming <span lang="hu">"Böngésző mint alkalmazásfejlesztési platform"</span> (ISBN 978-963-284-993-5) from 2017. This Guide serves as both an English version, a revision, and an extension with a new and modern pedagogical approach.
 
 ## Legal information
 
-This guide is available free of charge to use for anyone. It is released under the [CC-BY-NC-SA 4.0 license](../LICENSE.md) by author Márton Visnovitz and co-authors. If you would like to create derivative works from it, feel free to contact the authors. If you would like to contribute to the development of this guide, check out the [contribution guidelines](../CONTRIBUTING.md).
+This guide is available free of charge to use for anyone. It is released under the [CC-BY-NC-SA 4.0 license](https://github.com/vimtaai/book-javascript/blob/master/LICENSE.md) by author Márton Visnovitz and co-authors. If you would like to create derivative works from it, feel free to contact the authors. If you would like to contribute to the development of this guide, check out the [contribution guidelines]([CONTRIBUTING.md](https://github.com/vimtaai/book-javascript/blob/master/CONTRIBUTING.md)).
 
 [2a]: ../2a%20-%20Developing%20Applications
