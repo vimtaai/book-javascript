@@ -21,7 +21,7 @@ When creating this guide we followed three core principles:
 
 **Part I** contains information about the core concepts of developing software in a web environment. This includes an introduction to the basics of the Web, how it works, its fundamental principles and technologies, along with a guide for the basics of the JavaScript programming language. This section is intended to be used as a reference rather than as a learning material. Instead of going through the information presented here, start with one of the learning journeys presented in the Part II.
 
-**Part II** includes various learning journeys to choose from. With the exception of the "[Developing Applications][2a]" journey, little to no prerequisite knowledge is required to get started. Each journey builds on a different approach/strategy to teach and learn programming. Choosing either of these will cover the basics of programming and various programming topics, but each also includes pieces of knowledge that are unique to the specific learning journey.
+**Part II** includes various learning journeys to choose from. With the exception of the "[Web Applications][2a]" journey, little to no prerequisite knowledge is required to get started. Each journey builds on a different approach/strategy to teach and learn programming. Choosing either of these will cover the basics of programming and various programming topics, but each also includes pieces of knowledge that are unique to the specific learning journey.
 
 Several **exercises** are also present in each journey. Some of these are included to practice a specific piece of new knowledge, while some serve as complex problems to apply the knowledge gained throughout the whole learning experience. Throughout this guide we include relevant **references** to external sources, such as links to documentation pages and other resources. We also include figures, code examples and side notes about more advanced topics. Some additional information is also presented for educational consideration in the form of side-notes.
 
@@ -37,6 +37,6 @@ This Guide is based on and is a spiritual successor the Hungarian language teach
 
 ## Legal information
 
-This guide is available free of charge to use for anyone. It is released under the [CC-BY-NC-SA 4.0 license](https://github.com/vimtaai/book-javascript/blob/master/LICENSE.md) by author Márton Visnovitz and co-authors. If you would like to create derivative works from it, feel free to contact the authors. If you would like to contribute to the development of this guide, check out the [contribution guidelines]([CONTRIBUTING.md](https://github.com/vimtaai/book-javascript/blob/master/CONTRIBUTING.md)).
+This guide is available free of charge to use for anyone. It is released under the [CC-BY-NC-SA 4.0 license](https://github.com/vimtaai/book-javascript/blob/master/LICENSE.md) by author Márton Visnovitz and co-authors. If you would like to create derivative works from it, feel free to contact the authors. If you would like to contribute to the development of this guide, check out the [contribution guidelines](https://github.com/vimtaai/book-javascript/blob/master/CONTRIBUTING.md).
 
-[2a]: ../2a%20-%20Developing%20Applications
+[2a]: web-applications/getting-started

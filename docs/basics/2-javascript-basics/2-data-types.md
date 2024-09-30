@@ -71,7 +71,7 @@ enterprise.isActive;    // undefined
 
 Arrays are special objects that store a list of values indexed by incremental integers starting from `0`. Values in an array can have different types and can be changed by assigning a new value to the given index.
 
-The size of an array can be changed dynamically, values can be added, removed and  values can be changed. This dynamic nature of arrays makes it possible to use them as other data structures as well, such as [queues]((https://en.wikipedia.org/wiki/Queue_(abstract_data_type))) and [stacks]((https://en.wikipedia.org/wiki/Stack_(abstract_data_type))).
+The size of an array can be changed dynamically, values can be added, removed and  values can be changed. This dynamic nature of arrays makes it possible to use them as other data structures as well, such as [queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) and [stacks](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)).
 
 Array literals are defined by listing values between square brackets (`[]`).
 
